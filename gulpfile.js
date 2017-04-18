@@ -3,6 +3,12 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 var browserSync = require('browser-sync');
+var copy = require('gulp-copy');
+
+gulp.task('copy', function() {
+  return gulp.src('./node_modules/tachyons/src/*.css')
+    .pipe(copy('./src/precss/tachyons/', {prefix: 3}));
+});
 
 gulp.task('css', function() {
   var processors = [
@@ -29,4 +35,4 @@ gulp.task('watch', function() {
   gulp.watch('src/*.html', browserSync.reload);
 });
 
-gulp.task('default', ['css', 'browser-sync', 'watch']);
+gulp.task('default', ['copy', 'css', 'browser-sync', 'watch']);
