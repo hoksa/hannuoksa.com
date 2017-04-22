@@ -3,8 +3,10 @@
 @import "tachyons/_position.css";
 @import "tachyons/_coordinates.css";
 @import "tachyons/_font-family.css";
+@import "tachyons/_type-scale.css";
 @import "tachyons/_line-height.css";
 @import "tachyons/_font-style.css";
+@import "tachyons/_text-align.css";
 @import "tachyons/_colors.css";
 @import "tachyons/_skins.css";
 @import "tachyons/_rotations.css";
@@ -15,14 +17,10 @@
 }
 
 .script {
-  font-family: 'Leckerli One', fantasy;
+  font-family: 'Berkshire Swash', fantasy;
   font-style: italic;
 }
 
 .code {
   font-family: 'Roboto Mono', monospace;
-}
-
-.rotate-345 {
-  transform: rotate(345deg);
 }
