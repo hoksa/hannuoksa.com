@@ -1,6 +1,7 @@
 @import "tachyons/_normalize.css";
 @import "tachyons/_spacing.css";
 @import "tachyons/_position.css";
+@import "tachyons/_media-queries.css";
 @import "tachyons/_coordinates.css";
 @import "tachyons/_font-family.css";
 @import "tachyons/_type-scale.css";
