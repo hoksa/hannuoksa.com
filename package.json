@@ -1,0 +1,30 @@
+{
+  "name": "hannuoksa.com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "hannuoksa.com",
+  "author": "Hannu Oksa",
+  "scripts": {
+    "tailwind:watch": "npx tailwindcss -i ./src/css/global.css -o ./dist/css/styles.css --watch",
+    "webpack:watch": "npx webpack --watch",
+    "start": "concurrently -p \"[{name}]\" -n \"WEBPACK,11TY,TAILWIND\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run webpack:watch\" \"npx @11ty/eleventy --serve\" \"npm run tailwind:watch\"",
+    "build": "npm run eslint & npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.4.1",
+    "concurrently": "^7.0.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "postcss": "^8.4.5",
+    "prettier": "2.5.1",
+    "tailwindcss": "^3.0.11",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
+}

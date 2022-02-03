@@ -1,0 +1,82 @@
+---
+layout: base.html
+title: Hannu Oksa
+---
+
+<div class="w-5/6 ml-auto min-h-screen flex flex-col flex-nowrap p-2 md:py-3 lg:py-5">
+  <header class="relative">
+    <!--<div class="w-16 pt-16 absolute -left-[20%] bg-gradient-to-b from-zinc-50 to-zinc-300 rounded-full"></div>-->
+    <div class="w-16 pt-16 absolute -left-[20%]">
+      {% include spinner1.html %}
+    </div>
+    <h1 class="mb-1.5 font-[mondwest] text-3xl leading-extra-tight text-zinc-50">Hannu Oksa</h1>
+    <div
+      class="mb-8 sm:mb-12 pt-0.5 text-3xl leading-extra-tight border-t text-zinc-50 border-zinc-300">
+      <p class="mb-3 sm:mb-4 md:w-11/12 lg:w-[60%]">
+        I'm an experienced designer helping teams of all sizes build digital
+        products.
+      </p>
+    </div>
+  </header>
+  <main class="grow flex flex-col flex-nowrap">
+    <div
+      class="relative mb-8 sm:mb-12 text-3xl pt-0.5 hyphens-auto leading-extra-tight border-t text-purple-400 border-purple-400">
+      <!--<div class="w-16 pt-16 absolute -left-[20%] bg-gradient-to-b from-zinc-50 via-zinc-50 to-purple-300 rounded-full"></div>-->
+      <div class="w-16 pt-16 absolute -left-[20%]">
+        {% include spinner2.html %}
+      </div>  
+      <p class="mb-3 sm:mb-4 md:w-11/12 lg:w-[60%]">
+        <span class="text-purple-100">I work across the product lifecycle.</span> From strategy and creative direction to user experience design and iterative delivery with engineers. From initial product discovery to building and launching your MVP, and beyond.
+      </p>
+    </div>
+    <div
+      class="relative grow mb-20 sm:mb-24 text-3xl pt-0.5 hyphens-auto leading-extra-tight border-t text-emerald-400 border-emerald-400">
+      <!--<div class="w-16 pt-16 absolute -left-[20%] bg-gradient-to-b from-zinc-50 via-zinc-50 to-emerald-200 rounded-full"></div>-->
+      <div class="w-16 pt-16 absolute -left-[20%]">
+        {% include spinner3.html %}
+      </div>       
+      <p class="mb-3 sm:mb-4 md:w-11/12 lg:w-[60%]">
+        <span class="text-emerald-100">The best work happens in teams.</span> I assume the role of most impact depending on your team size and product maturity. I can be the first designer owning the end-to-end experience, or provide design and product leadership to a larger, established team.
+      </p>
+    </div>
+    <div class="lg:flex border-t border-zinc-300 relative">
+      <div class="w-16 pt-16 absolute -left-[20%]">
+        {% include spinner4.html %}
+      </div>
+      <div
+        class="lg:w-[60%] lg:mr-[20%] pt-0.5 text-sm hyphens-auto leading-snug text-zinc-100">
+        <p class="mb-2">
+          From startups to enterprise organizations, I've been lucky to work with many great teams over the years,
+            including:&nbsp;
+          {%- for client in clients -%}
+          {% if forloop.last == true %}and {{ client }}.{% else %}{{ client }},&nbsp;{% endif %}
+          {%- endfor -%}
+        </ul>
+        <p>I work as a product design director at <span class="italic">Reaktor</span>. I'm currently open to select freelance projects.</p>
+      </div>
+      <div
+        class="lg:w-3/12 mt-1 lg:mt-0 pt-0.5 font-[mondwest] text-sm hyphens-auto leading-snug border-t lg:border-t-0 border-dotted text-zinc-100 border-zinc-300">
+        <ul class="flex flex-wrap">
+          <li class="mr-0.5 mb-0.5"><a href="mailto:hannu@hannuoksa.com"
+              class="border border-zinc-300 hover:border-zinc-50 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-50/50 text-zinc-300 hover:text-zinc-900 py-1 px-2 rounded-full block transition-colors">Email</a>
+          </li>
+          <li class="mr-0.5 mb-0.5"><a href="https://twitter.com/hannuoksa"
+              class="border border-zinc-300 hover:border-zinc-50 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-50/50 text-zinc-300 hover:text-zinc-900 py-1 px-2 rounded-full block transition-colors">Twitter</a>
+          </li>
+          <li class="mr-0.5 mb-0.5"><a href="https://instagram.com/hannuok"
+              class="border border-zinc-300 hover:border-zinc-50 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-50/50 text-zinc-300 hover:text-zinc-900 py-1 px-2 rounded-full block transition-colors">Instagram</a>
+          </li>
+          <li class="mr-0.5 mb-0.5"><a href="https://www.linkedin.com/in/hannuoksa/"
+              class="border border-zinc-300 hover:border-zinc-50 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-50/50 text-zinc-300 hover:text-zinc-900 py-1 px-2 rounded-full block transition-colors">LinkedIn</a>
+          </li>
+          <li class="mr-0.5 mb-0.5"><a href="https://github.com/hoksa"
+              class="border border-zinc-300 hover:border-zinc-50 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-50/50 text-zinc-300 hover:text-zinc-900 py-1 px-2 rounded-full block transition-colors">Github</a>
+          </li>
+          <li class="mr-0.5 mb-0.5"><a href="https://www.polywork.com/hoksa"
+              class="border border-zinc-300 hover:border-zinc-50 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-50/50 text-zinc-300 hover:text-zinc-900 py-1 px-2 rounded-full block transition-colors">Polywork</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
