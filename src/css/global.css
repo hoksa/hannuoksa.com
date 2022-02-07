@@ -8,10 +8,3 @@
   font-display: optional;
   src: url(/fonts/PPNeueMontreal-Regular.woff2) format("woff2");
 }
-
-@font-face {
-  font-family: "mondwest";
-  font-style: normal;
-  font-display: optional;
-  src: url(/fonts/PPMondwest-Bold.woff2) format("woff2");
-}
