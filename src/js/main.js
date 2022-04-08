@@ -27,7 +27,7 @@ const introAnimation = (function () {
         anim.animatables.forEach(function (a) {
           anime({
             targets: a.target.children,
-            opacity: [0.01, 1],
+            opacity: [0, 1],
             duration: 150,
             easing: "linear",
             delay: function (el, i, l) {
