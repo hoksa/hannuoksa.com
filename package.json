@@ -5,10 +5,11 @@
   "description": "hannuoksa.com",
   "author": "Hannu Oksa",
   "scripts": {
+    "tailwind:build": "npx tailwindcss -i ./src/css/global.css -o ./dist/css/styles.css --minify",
     "tailwind:watch": "npx tailwindcss -i ./src/css/global.css -o ./dist/css/styles.css --watch",
     "webpack:watch": "npx webpack --watch",
     "start": "concurrently -p \"[{name}]\" -n \"WEBPACK,11TY,TAILWIND\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run webpack:watch\" \"npx @11ty/eleventy --serve\" \"npm run tailwind:watch\"",
-    "build": "npm run eslint & npx @11ty/eleventy"
+    "build": "npm run eslint & npx run tailwind:build & npx @11ty/eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
