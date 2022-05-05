@@ -61,21 +61,11 @@ title: Hannu Oksa
       <div
         class="anim-border lg:w-2/12 mt-1 lg:mt-0 pt-1 text-sm hyphens-auto leading-snug border-t lg:border-t-0 border-dotted text-gray-100 border-gray-300">
         <ul class="anim-list flex flex-wrap">
-          <li class="mr-0.5 mb-0.5"><a href="mailto:hannu@hannuoksa.com"
-              class="border border-gray-300 hover:border-gray-50 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 text-gray-300 hover:text-gray-900 focus:text-gray-900 py-1 px-2 rounded-full block transition-colors">Email</a>
-          </li>
-          <li class="mr-0.5 mb-0.5"><a href="https://twitter.com/hannuoksa"
-              class="border border-gray-300 hover:border-gray-50 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 text-gray-300 hover:text-gray-900 focus:text-gray-900 py-1 px-2 rounded-full block transition-colors">Twitter</a>
-          </li>
-          <li class="mr-0.5 mb-0.5"><a href="https://instagram.com/hannuok"
-              class="border border-gray-300 hover:border-gray-50 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 text-gray-300 hover:text-gray-900 focus:text-gray-900 py-1 px-2 rounded-full block transition-colors">Instagram</a>
-          </li>
-          <li class="mr-0.5 mb-0.5"><a href="https://www.linkedin.com/in/hannuoksa/"
-              class="border border-gray-300 hover:border-gray-50 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 text-gray-300 hover:text-gray-900 focus:text-gray-900 py-1 px-2 rounded-full block transition-colors">LinkedIn</a>
-          </li>
-          <li class="mr-0.5 mb-0.5"><a href="https://github.com/hoksa"
-              class="border border-gray-300 hover:border-gray-50 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 text-gray-300 hover:text-gray-900 focus:text-gray-900 py-1 px-2 rounded-full block transition-colors">Github</a>
-          </li>
+          {%- for sociallink in sociallinks -%}
+          <li class="mr-0.5 mb-0.5"><a href="{{ sociallink.link }}"
+            class="border border-gray-300 hover:border-gray-50 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 text-gray-300 hover:text-gray-900 focus:text-gray-900 py-1 px-2 rounded-full block transition-colors">{{ sociallink.name }}</a>
+          </li>          
+          {%- endfor -%}
         </ul>
       </div>
     </div>

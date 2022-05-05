@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Email",
+    "link": "mailto:hannu@hannuoksa.com"
+  },
+  {
+    "name": "Twitter",
+    "link": "https://twitter.com/hannuoksa"
+  },
+  {
+    "name": "Instagram",
+    "link": "https://instagram.com/hannuok"
+  },
+  {
+    "name": "Linkedin",
+    "link": "https://www.linkedin.com/in/hannuoksa/"
+  },
+  {
+    "name": "Github",
+    "link": "https://github.com/hoksa"
+  }
+]
