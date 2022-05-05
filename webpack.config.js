@@ -9,5 +9,4 @@ module.exports = {
     path: path.resolve(__dirname, "dist/js"),
   },
   plugins: [new ESLintPlugin()],
-  mode: "development",
 };
