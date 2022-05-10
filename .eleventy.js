@@ -9,6 +9,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(
     "./" + process.env.INPUT_DIR + "/fonts/*.woff2"
   );
+  eleventyConfig.addPassthroughCopy(
+    "./" + process.env.INPUT_DIR + "/favicon.*"
+  );  
   return {
     dir: {
       input: process.env.INPUT_DIR,
