@@ -50,7 +50,7 @@ title: Hannu Oksa
           From startups to enterprise organizations, I've been lucky to work with many great teams over the years,
           including:&nbsp;
           {%- for client in clients -%}
-          {% if forloop.last == true %}and {{ client }}.{% else %}{{ client }},&nbsp;{% endif %}
+          {% if forloop.last == true %}and {{ client }}.{% else %}{{ client }}, {% endif %}
           {%- endfor -%}
           </ul>
         <p class="anim-para">I work as a product design director at <span class="italic">Reaktor</span>. I'm currently open to select
