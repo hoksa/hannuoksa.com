@@ -71,4 +71,7 @@ const introAnimation = (function () {
   return introAnimationTimeline;
 })();
 
-window.onload = introAnimation.play();
+window.onload = function(){
+  document.body.classList.remove("opacity-0");
+  introAnimation.play();
+};
